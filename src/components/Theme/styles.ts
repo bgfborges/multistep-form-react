@@ -22,6 +22,13 @@ export const Steps = styled.div`
 export const Sidebar = styled.div`
     width: 350px;
     border-right: 1px solid #5a2593; 
+    .credits {
+        text-align: center;
+        margin-top: 40px;
+        a{
+        color: white;
+        }
+    }
 `;
 
 export const Page = styled.div`

@@ -48,6 +48,7 @@ const Theme = ({ children }: Props) => {
                             path="/result"
                             active={ state.currentStep === 4 }
                         />
+                        <p className="credits">Created with love by <a href="https://github.com/bgfborges" target="_blank" rel="noreferrer"><strong>Gabriel Borges</strong></a></p>
                     </Sidebar>
                     <Page>
                         {children}

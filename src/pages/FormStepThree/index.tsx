@@ -20,7 +20,7 @@ const FormStepThree = () => {
 
     const handleNextStep = () => {
         if(state.email !== '' || state.github !== ''){
-            console.log(state);
+            navigate('/result');
         } else {
             alert('Preencha os dados');
         }
