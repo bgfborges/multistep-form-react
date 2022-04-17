@@ -8,11 +8,15 @@ const FormStepThree = () => {
     const { state, dispatch  } = useForm();
 
     useEffect(() => {
-        dispatch({
+        if(state.name === ''){
+            navigate('/');
+        } else {
+            dispatch({
             type: FormActions.setCurrentStep,
             payload: 3
-        })
-    }, [dispatch])
+            })
+        }
+    }, [])
 
     const handleNextStep = () => {
         if(state.email !== '' || state.github !== ''){
@@ -52,8 +56,8 @@ const FormStepThree = () => {
             </label>
             
             <label>
-                Github
-                <input type="url" autoFocus value={state.github} onChange={handleGithubChange} />
+                Github Username
+                <input type="text" value={state.github} onChange={handleGithubChange} />
             </label>
 
             <button onClick={handleBeforeStep}>Voltar</button>

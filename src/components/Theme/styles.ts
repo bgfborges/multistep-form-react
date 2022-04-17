@@ -20,7 +20,7 @@ export const Steps = styled.div`
 `;
 
 export const Sidebar = styled.div`
-    width: 250px;
+    width: 350px;
     border-right: 1px solid #5a2593; 
 `;
 
